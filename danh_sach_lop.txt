@@ -1,0 +1,4 @@
+id,name,email
+1,lớp 1, lop1@gmail.com
+2,lớp 2, lop2@gmail.com
+3,lớp 3, lop3@gmail.com

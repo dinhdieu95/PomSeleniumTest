@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC
+        "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+    <session-factory>
+        <property name="hibernate.connection.driver_class">oracle.jdbc.driver.OracleDriver</property>
+        <property name="hibernate.dialect">org.hibernate.dialect.Oracle10gDialect</property>
+
+        <property name="show_sql">false</property>
+        <property name="hibernate.cache.use_second_level_cache">true</property>
+        <property name="hibernate.cache.region.factory_class">org.hibernate.cache.ehcache.SingletonEhCacheRegionFactory</property>
+        <property name="hibernate.cache.provider_class">net.sf.ehcache.hibernate.EhCacheProvider</property>
+        <property name="cache.use_query_cache">false</property>
+        <property name="hibernate.connection.url">
+            jdbc:oracle:thin:@localhost:1521/XE
+        </property>
+        <property name="hibernate.connection.username">
+            SYSTEM
+            <!--            SYSTEM, PDBADMIN-->
+        </property>
+        <property name="hibernate.connection.password">
+            123456
+        </property>
+        <mapping class="learnjava.database.entity.Employee"/>
+
+    </session-factory>
+</hibernate-configuration>

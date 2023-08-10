@@ -1,0 +1,4 @@
+1,Nguyen Van A,1234567890,10A
+2,Tran Thi B,0987654321,11B
+3,Le Van C,9876543210,12C
+HocSinh{id=1, name='Nguyen Van A', sdt='1234567890', classs='10A'}

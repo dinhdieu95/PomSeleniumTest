@@ -1,0 +1,8 @@
+<ehcache>
+    <defaultCache
+            maxEntriesLocalHeap="10000"
+            eternal="false"
+            timeToIdleSeconds="300"
+            timeToLiveSeconds="60000"
+            memoryStoreEvictionPolicy="LRU" />
+</ehcache>
