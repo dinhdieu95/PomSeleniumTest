@@ -20,15 +20,13 @@ public class InitDriver {
         System.setProperty(CONFIG_DRIVER_CHROME, URL_SRC_CHROME);
         driver = new ChromeDriver();
         driver.manage().window().maximize();
-        driver.get("https://misast.mshopkeeper.vn/");
         driver.manage().timeouts().pageLoadTimeout(30, TimeUnit.SECONDS);
-        driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
     }
 
-    @Test
-    public void test() {
-
-    }
+//    @Test
+//    public void test() {
+//
+//    }
 
 
     @AfterTest
