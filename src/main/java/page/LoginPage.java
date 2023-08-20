@@ -1,5 +1,6 @@
 package page;
 
+import common.Common;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
@@ -16,6 +17,7 @@ public class LoginPage {
         driver.findElement(buttonLogin).click();
     }
     public void enterUsername(String username){
+        Common.wait(driver, 5000);
         driver.findElement(this.username).sendKeys(username);
     }
     public void enterPass(String pass){

@@ -2,27 +2,19 @@
 
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 
-<suite name="TestSuite" thread-count="2" parallel="tests">
+<suite name="TestSuite" thread-count="5" parallel="true">
 
-    <test name="ChromeTest">
+    <listeners>
 
-        <parameter name="browser" value="Chrome"/>
+        <listener class-name="org.testng.reporters.EmailableReporter2"/>
+    </listeners>
+    <test name="run multi line">
 
-        <classes>
-
-            <class name="testcase.LogInTest"></class>
-
-        </classes>
-
-    </test>
-
-    <test name="FirefoxTest">
-
-        <parameter name="browser" value="Firefox"/>
+        <!--        <parameter name="browser" value="Firefox"/>-->
 
         <classes>
 
-            <class name="testcase.LogInTest">
+            <class name="testcase.FactoryTest">
 
             </class>
 
@@ -30,18 +22,5 @@
 
     </test>
 
-    <test name="EdgeTest">
-
-        <parameter name="browser" value="Edge"/>
-
-        <classes>
-
-            <class name="testcase.LogInTest">
-
-            </class>
-
-        </classes>
-
-    </test>
 
 </suite>
