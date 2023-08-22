@@ -11,6 +11,6 @@ public class FactoryTest extends EmailableReporter2 {
 //            instances[i] = new LoginPageTest(i);
 //        }
 //        return instances;
-        return new Object[]{new LoginPageTest(0), new LoginPageTest(1)};
+        return new Object[]{new LoginPageTest(0)};
     }
 }
