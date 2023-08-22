@@ -1,8 +1,9 @@
 package testcase;
 
 import org.testng.annotations.Factory;
+import org.testng.reporters.EmailableReporter2;
 
-public class FactoryTest {
+public class FactoryTest extends EmailableReporter2 {
     @Factory
     public Object[] test_factory(){
 //        Object[] instances = new Object[1];

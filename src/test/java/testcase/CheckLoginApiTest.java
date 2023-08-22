@@ -5,11 +5,12 @@ import common.dto.LoginDTO;
 import io.restassured.response.Response;
 import org.testng.Assert;
 import org.testng.annotations.Test;
+import org.testng.reporters.EmailableReporter2;
 
 import java.util.HashMap;
 import java.util.Map;
 
-public class CheckLoginApiTest {
+public class CheckLoginApiTest extends EmailableReporter2 {
     @Test
     public  void check_login(){
         Map<String, Object> request = new HashMap<>();

@@ -5,13 +5,14 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
+import org.testng.reporters.EmailableReporter2;
 import page.BrowserStackHomePage;
 import page.BrowserStackSignUpPage;
 
 import static common.Common.CONFIG_DRIVER_CHROME;
 import static common.Common.URL_SRC_CHROME;
 
-public class BrowserStackSetupPOMTest {
+public class BrowserStackSetupPOMTest extends EmailableReporter2 {
     WebDriver driver;
     BrowserStackHomePage objBrowserStackHomePage;
     BrowserStackSignUpPage objBrowserStackSignUpPage;
