@@ -16,7 +16,7 @@ import java.util.concurrent.TimeUnit;
 
 public class Common {
     //    public SOURCE_URL = System.getProperty("user.dir") + "/src/test/resources/";
-    public static final String URL_SRC_CHROME = System.getProperty("user.dir") + "/src/test/resources/driver/chromedriver.exe";
+    public static final String URL_SRC_CHROME = System.getProperty("user.dir") + "/src/test/resources/drivers/chromedriver.exe";
     public static final String URL_SRC_FIREFOX = System.getProperty("user.dir") + "/src/test/resources/driver/geckodriver.exe";
     public static final String URL_SRC_ME = System.getProperty("user.dir") + "/src/test/resources/driver/msedgedriver.exe";
     public static final String CONFIG_DRIVER_CHROME = "webdriver.chrome.driver";
