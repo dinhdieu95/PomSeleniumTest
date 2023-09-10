@@ -1,0 +1,8 @@
+package common.config;
+
+public class ApiConfig {
+    public static final String API_LOGIN = "https://apipub.tcbs.com.vn/authen/v1/login";
+    public static final String LIST_OUTWARDS = "https://misast.mshopkeeper.vn/backendg2/api/Outwards";
+    public static final String KEY = "Bearer 8M30cf0ndjT9ujRjHaIu8zhTtHdqjxu7ViNqd5hnchpHtOcBtmQFZV5lxpWmGCCUgUjX2qoy9EgJ39m4Uy8N24scPDih-o_Xdu9euQtVxTZkKKPP29Dm-8wxC6EGadfNV2_J1qbopNthtcLkqZrLATEh3ZoWM-UVRxWGB4nUsynUSY6nXuPtRRn0URrdmKrHQVBgdLWL2AZZE0EToEbA__-7qKDGAO_z8Oq2NkPM46Yw7ZCaNrsK0OBqptnDc7QhU5HyWbpHnb8JvNNG4DwN5RZmRy9nu7qG59SV2QnMRren0lZlgxCJh9ynZ1notx67nsPGy9za4DZ3rvve3L1_E9_5grUopihTwlYccGxVhM2AiK4csHYEV2xpi2H29l743exiT_50uLITENKAu_bUV0uDUpLOYuzhTHZapBhCFboTMEMrCedseLil93R4NC3qKmNz5XE1nYwag4zu13YV6B8qi0n8vJOmvwXrWWrfTKZse2u-8OFtKvO0Fj1-1fn7gUSSXGDvz_XKpLhIoD8FlSOCO-U_1_5LnTHhe55eFPkOU9qvUW6-69hxuLCJ5D7ukCFZzLDDGYNtpoK1gxC9uEmFLBeyF1DX3xcXaLEmfmB36Qb9qXKlnIiY-agaAaN2m17HxnS-UbtPgv2ilZ3ZTHRKTijVxsnnMViQI3AokqTiKjUNq1i5kEw_JN-rj3bpUG0Lp7pghP96tIAOhr5cww";
+
+}
