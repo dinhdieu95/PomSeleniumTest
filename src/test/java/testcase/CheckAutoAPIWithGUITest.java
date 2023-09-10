@@ -65,7 +65,7 @@ public class CheckAutoAPIWithGUITest {
         for (WebElement element : listSeri) {
             for (Object data : listDataApi) {
 //                Assert.assertEquals(data.getRefNo(), element.getText(), " Check 2 phan tu giong nhau");
-                System.out.println(element.getText());
+                System.out.println( "phan tu tu ui: "+ element.getText());
                 action.moveToElement(element).perform();
                 Assert.assertTrue(data.toString().contains(element.getText().toString()), "Dữ liệu serinum bị lệch");
             }
