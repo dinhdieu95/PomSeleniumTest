@@ -62,14 +62,21 @@ public class CheckAutoAPIWithGUITest {
         ListBill listBill = new ListBill(driver);
         Actions action = new Actions(driver);
         List<WebElement> listSeri = listBill.getSeri();
-        for (WebElement element : listSeri) {
-            for (Object data : listDataApi) {
-//                Assert.assertEquals(data.getRefNo(), element.getText(), " Check 2 phan tu giong nhau");
-                System.out.println( "phan tu tu ui: "+ element.getText());
-                action.moveToElement(element).perform();
-                Assert.assertTrue(data.toString().contains(element.getText().toString()), "Dữ liệu serinum bị lệch");
-            }
-
+//        for (WebElement element : listSeri) {
+//            for (Object data : listDataApi) {
+////                Assert.assertEquals(data.getRefNo(), element.getText(), " Check 2 phan tu giong nhau");
+//                System.out.println( "phan tu tu ui: "+ element.getText());
+//                action.moveToElement(element).perform();
+//                Assert.assertTrue(data.toString().contains(element.getText().toString()), "Dữ liệu serinum bị lệch");
+//                break;
+//            }
+//
+//        }
+        for (int i =0; i<5; i++){
+            System.out.println( "phan tu tu ui: "+ listSeri.get(i).getText());
+            action.moveToElement(listSeri.get(i)).perform();
+            System.out.println("data tu api" + listDataApi.get(i));
+            Assert.assertTrue(listDataApi.get(i).toString().contains(listSeri.get(i).getText().toString()), "Dữ liệu serinum bị lệch ở vị trí: " + (i+1));
         }
     }
     @AfterTest

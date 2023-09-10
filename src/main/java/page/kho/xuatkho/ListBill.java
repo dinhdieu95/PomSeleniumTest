@@ -9,7 +9,7 @@ import java.util.List;
 
 public class ListBill {
     By date_column = By.xpath("//td[@data-columnid ='MISADateColumn-1388']");
-    By seri = By.xpath("//tr/td[3]");
+    By seri = By.xpath("//tr/td[3]/div/div");
     By object = By.xpath("//td[@data-columnid ='MISAGridColumn-1408']");
     By sum = By.xpath("//td[@data-columnid ='MISANumberColumn-1418']");
 
