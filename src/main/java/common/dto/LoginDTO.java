@@ -1,8 +1,12 @@
 package common.dto;
 
+import java.lang.reflect.Array;
+import java.util.ArrayList;
+
 public class LoginDTO {
     private String username;
     private String password;
+    private ArrayList<DeviceInfoDTO> device_info = new ArrayList<>();
 
     public LoginDTO() {
     }
@@ -26,5 +30,10 @@ public class LoginDTO {
 
     public void setPassword(String password) {
         this.password = password;
+    }
+
+    public void setDevice_info(DeviceInfoDTO device_info) {
+        this.device_info.add(device_info);
+
     }
 }

@@ -46,6 +46,8 @@ public class CheckAutoAPIWithGUITest {
         request.put("CompanyCode", "misast");
         request.put("Accept", "application/json");
 
+//        String body = "{ "us"}"
+
 // lấy data API
         Response response = RequestAPI.get(LIST_OUTWARDS, request);
         ArrayList<Object> listDataApi = (ArrayList<Object>) response.jsonPath().getList("Data");
