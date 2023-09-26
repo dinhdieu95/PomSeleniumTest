@@ -56,4 +56,11 @@ public class Common {
                 .ignoring(NoSuchElementException.class);
         wait.until(ExpectedConditions.visibilityOfElementLocated(By.name(data)));
     }
+    public static void fluentWaitBy(WebDriver driver, long timeout , By data){
+        Wait<WebDriver> wait = new FluentWait<WebDriver>(driver)
+                .withTimeout(Duration.ofSeconds(timeout))
+                .pollingEvery(Duration.ofSeconds(5))
+                .ignoring(NoSuchElementException.class);
+        wait.until(ExpectedConditions.visibilityOfElementLocated(data));
+    }
 }

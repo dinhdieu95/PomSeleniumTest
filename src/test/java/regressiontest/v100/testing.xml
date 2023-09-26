@@ -14,7 +14,7 @@
 
         <classes>
 
-            <class name="testcase.FactoryTest">
+            <class name="testcase.example.FactoryTest">
 
             </class>
 

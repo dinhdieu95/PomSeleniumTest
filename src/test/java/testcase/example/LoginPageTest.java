@@ -1,4 +1,4 @@
-package testcase;
+package testcase.example;
 
 import com.codeborne.selenide.WebDriverRunner;
 import common.InitDriver;

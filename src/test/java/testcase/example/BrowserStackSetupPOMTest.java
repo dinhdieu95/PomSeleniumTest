@@ -1,4 +1,4 @@
-package testcase;
+package testcase.example;
 import java.util.concurrent.TimeUnit;
 
 import com.codeborne.selenide.WebDriverRunner;

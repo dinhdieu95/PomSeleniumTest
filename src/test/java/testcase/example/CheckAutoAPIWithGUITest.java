@@ -1,4 +1,4 @@
-package testcase;
+package testcase.example;
 
 import common.RequestAPI;
 import common.dto.DataDTO;

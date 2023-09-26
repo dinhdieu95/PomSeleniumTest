@@ -1,4 +1,4 @@
-package testcase;
+package testcase.example;
 
 import org.testng.annotations.Factory;
 import org.testng.reporters.EmailableReporter2;

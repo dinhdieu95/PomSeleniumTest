@@ -17,7 +17,22 @@ public class DataProviderCsv {
             throw new RuntimeException(e);
         }
     }
-
+    @DataProvider(name ="searchDataCsv")
+    public static Object[][] getSearchDataCsv() {
+        try {
+            return ReadfromCSV("/file/login/search.csv");
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
+    }
+   @DataProvider(name ="regDataCsv")
+    public static Object[][] getRegDataCsv() {
+        try {
+            return ReadfromCSV("/file/login/reg.csv");
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
+    }
 
     public static String[][] ReadfromCSV(String path) throws InterruptedException {
 

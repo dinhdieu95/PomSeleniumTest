@@ -1,11 +1,11 @@
-package testcase;
+package testcase.example;
 
 import com.codeborne.selenide.WebDriverRunner;
 import common.Common;
 import org.apache.http.HttpRequest;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.devtools.*;
+//import org.openqa.selenium.devtools.*;
 //import org.openqa.selenium.devtools.HasDevTools;
 import org.openqa.selenium.logging.LogEntry;
 import org.testng.annotations.AfterTest;
