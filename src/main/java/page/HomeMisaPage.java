@@ -1,6 +1,6 @@
 package page;
 
-import common.Common;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
@@ -13,9 +13,9 @@ public class HomeMisaPage {
         this.driver = driver;
     }
     public void vao_thu_muc_xuat_kho(){
-        Common.wait(driver, 10000);
+//        Common.wait(driver, 10000);
         driver.findElement(tabBarKho).click();
-        Common.wait(driver, 5000);
+//        Common.wait(driver, 5000);
         driver.findElement(tabBarXuatKho).click();
 
     }

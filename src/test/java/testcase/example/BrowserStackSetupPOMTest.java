@@ -1,7 +1,6 @@
 package testcase.example;
 import java.util.concurrent.TimeUnit;
 
-import com.codeborne.selenide.WebDriverRunner;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.AfterTest;
@@ -11,9 +10,6 @@ import org.testng.reporters.EmailableReporter2;
 import page.BrowserStackHomePage;
 import page.BrowserStackSignUpPage;
 
-import static com.codeborne.selenide.Selenide.open;
-import static common.Common.CONFIG_DRIVER_CHROME;
-import static common.Common.URL_SRC_CHROME;
 
 public class BrowserStackSetupPOMTest extends EmailableReporter2 {
     WebDriver driver;
@@ -22,7 +18,6 @@ public class BrowserStackSetupPOMTest extends EmailableReporter2 {
 
     @BeforeTest
     public void setup() {
-        System.setProperty(CONFIG_DRIVER_CHROME, URL_SRC_CHROME);
         driver = new ChromeDriver();
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
         driver.get("https://www.browserstack.com/");
