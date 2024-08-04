@@ -1,5 +1,4 @@
 package testcase.example;
-import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -9,6 +8,8 @@ import org.testng.annotations.Test;
 import org.testng.reporters.EmailableReporter2;
 import page.BrowserStackHomePage;
 import page.BrowserStackSignUpPage;
+
+import java.util.concurrent.TimeUnit;
 
 
 public class BrowserStackSetupPOMTest extends EmailableReporter2 {
@@ -37,12 +38,17 @@ public class BrowserStackSetupPOMTest extends EmailableReporter2 {
     public void enter_userDetails() {
         objBrowserStackSignUpPage = new BrowserStackSignUpPage(driver);
         objBrowserStackSignUpPage.veryHeader();
+        driver.get("https://www.browserstack.com/users/sign_up");
+        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
         objBrowserStackSignUpPage.enterFullName("TestUser");
         objBrowserStackSignUpPage.enterBusinessEmail("TestUser@gmail.com");
         objBrowserStackSignUpPage.enterPasswrod("TestUserPassword");
+        objBrowserStackSignUpPage.submit();
+
     }
+
     @AfterTest
-    public void after(){
+    public void after() {
         driver.close();
     }
 }

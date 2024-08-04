@@ -20,6 +20,8 @@ public class BrowserStackSignUpPage {
 
     @FindBy(xpath = "//*[@id='user_password']")
     WebElement password;
+    @FindBy(xpath = "//*[@id='user_submit']")
+    WebElement submit;
 
     public BrowserStackSignUpPage(WebDriver driver) {
         this.driver = driver;
@@ -38,5 +40,9 @@ public class BrowserStackSignUpPage {
     }
     public void enterPasswrod(String arg1) {
         password.sendKeys(arg1);
+    }
+
+    public void submit(){
+        submit.click();
     }
 }
